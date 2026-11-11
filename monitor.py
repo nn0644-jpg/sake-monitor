@@ -3,6 +3,15 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+
+from datetime import datetime, timezone
+
+print(
+    "実行時刻:",
+    datetime.now(timezone.utc)
+)
+
+
 WEBHOOK_URL = os.environ["DISCORD_WEBHOOK"]
 
 HEADERS = {
